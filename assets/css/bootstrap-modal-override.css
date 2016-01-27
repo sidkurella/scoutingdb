@@ -1,0 +1,6 @@
+.modal-header, .modal-body {
+    background-color: #272833;
+}
+.bootbox-close-button {
+    color: rgb(255, 255, 255);
+}
