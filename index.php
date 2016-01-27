@@ -53,9 +53,9 @@
 							<li><a href="elements.html">Elements</a></li>
                             <?php
                             if($_SESSION['loggedin']){
-                                echo '<li><a href="#" class="button special">Log Out '.$_SESSION['name'].'</a></li>';
+                                echo '<li><a href="#" onclick="window.location.replace("logout.php")" class="button special">Log Out '.$_SESSION['name'].'</a></li>';
                             } else {
-                                echo '<li><a href="#" class="button special">Log In</a></li>';
+                                echo '<li><a href="#" onclick="showlogin()" class="button special">Log In</a></li>';
                             }
                             ?>
 						</ul>
@@ -261,6 +261,37 @@
                           message: '<div style="background-color: #272833">'+errortext+'</div>'
                         });
                     }
+                }
+                function showlogin(){
+                    bootbox.dialog({
+                            title: "Log in",
+                            message: '<div class="row">  ' +
+                            '<div class="col-md-12"> ' +
+                            '<form id="loginform" class="form-horizontal" method="post" action="login.php"> ' +
+                            '<div class="form-group"> ' +
+                            '<label class="col-md-4 control-label" for="name">Username</label> ' +
+                            '<div class="col-md-4"> ' +
+                            '<input id="username" name="name" type="text" placeholder="Username" class="form-control input-md"> ' +
+                            '</div> ' +
+                            '</div> ' +
+                            '<div class="form-group"> ' +
+                            '<label class="col-md-4 control-label" for="pwd">Password</label> ' +
+                            '<div class="col-md-4"> ' +
+                            '<input id="password" name="pwd" type="password" placeholder="Password" class="form-control input-md"> ' +
+                            '</div> ' +
+                            '</div> ' +
+                            '</form> </div>  </div>',
+                            buttons: {
+                                success: {
+                                    label: "Log in",
+                                    className: "btn-success",
+                                    callback: function () {
+                                        document.getElementById("loginform").submit();
+                                    }
+                                }
+                            }
+                        }
+                    );
                 }
             </script>
 

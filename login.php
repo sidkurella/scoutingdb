@@ -28,19 +28,19 @@ try {
             die();
         } else {
             header("Location: index.php?".http_build_query(array(
-                    "incorrectlogin" => true
+                    "incorrectlogin" => "true"
                 )));
             die();
         }
     } else {
         header("Location: index.php?".http_build_query(array(
-                "incorrectlogin" => true
+                "incorrectlogin" => "true"
             )));
         die();
     }
 } catch(PDOException $e) {
     header("Location: index.php?".http_build_query(array(
-            "dberror" => true
+            "dberror" => "true"
         )));
     die();
 }

@@ -1,4 +1,4 @@
-.modal-header, .modal-body {
+.modal-header, .modal-body, .modal-footer {
     background-color: #272833;
 }
 .bootbox-close-button {

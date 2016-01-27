@@ -46,13 +46,13 @@ try {
         die();
     } else {
         header("Location: index.php?".http_build_query(array(
-                "alreadyexists" => true
+                "alreadyexists" => "true"
             )));
         die();
     }
 } catch(PDOException $e) {
     header("Location: index.php?".http_build_query(array(
-            "dberror" => true
+            "dberror" => "true"
         )));
     die();
 }
