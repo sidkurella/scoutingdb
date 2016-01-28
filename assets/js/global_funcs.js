@@ -36,6 +36,9 @@ function checkerrors() {
     } else if (parse("loggedin") === "true"){
         titletext = "Operation completed successfully."
         errortext = "You were successfully logged in.";
+    } else if (parse("loggedout") === "true"){
+        titletext = "Operation completed successfully."
+        errortext = "You were successfully logged out.";
     }
     if (errortext !== ""){
         bootbox.dialog({
@@ -66,7 +69,7 @@ function showlogin(){
             buttons: {
                 success: {
                     label: "Log in",
-                    className: "btn-success",
+                    className: "btn-primary",
                     callback: function () {
                         document.getElementById("loginform").submit();
                     }
@@ -113,7 +116,7 @@ function showsignup(){
             buttons: {
                 success: {
                     label: "Sign up",
-                    className: "btn-success",
+                    className: "btn-primary",
                     callback: function () {
                         document.getElementById("registerform").submit();
                     }

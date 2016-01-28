@@ -13,6 +13,8 @@ $_SESSION['id'] = null;
 $_SESSION['token'] = null;
 session_unset();
 session_destroy();
-header("Location: index.php");
+header("Location: index.php?".http_build_query(array(
+        "loggedout" => "true"
+    )));
 die();
 ?>

@@ -78,10 +78,9 @@ if(!isset($_SESSION['id']) || $_SESSION['loggedin']){} else {
                                 </li>';
 						}
 						?>
-						<li><a href="elements.html">Elements</a></li>
 						<?php
 						if($_SESSION['loggedin']){
-							echo '<li><a href="#" onclick="window.location.replace("logout.php")" class="button special">Log Out '.$_SESSION['name'].'</a></li>';
+							echo '<li><a href="logout.php" onclick="" class="button special">Log Out '.$_SESSION['name'].'</a></li>';
 						} else {
 							echo '<li><a href="#" onclick="showlogin()" class="button special">Log In</a></li>';
 							echo '<li><a href="#" onclick="showsignup()" class="button special">Sign Up</a></li>';
