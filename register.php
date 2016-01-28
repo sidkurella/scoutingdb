@@ -23,7 +23,7 @@ try {
     $results = $register_user->setFetchMode(PDO::FETCH_ASSOC);
     $results = $register_user->fetchAll();
     if(count($results) === 0) {
-        $add_user = $conn->prepare("INSERT INTO users VALUES (LEFT(UUID(), 10), :username, :passwd, CURRENT_TIMESTAMP(), :realname, NULL, :email, :phone, NULL)");
+        $add_user = $conn->prepare("INSERT INTO users VALUES (LEFT(UUID(), 10), :username, :passwd, CURRENT_TIMESTAMP(), :realname, :email, :phone)");
         $add_user->bindParam(":username", $login_username);
         $add_user->bindParam(":passwd", password_hash($login_password, PASSWORD_DEFAULT));
         $add_user->bindParam(":realname", $login_name);
@@ -42,7 +42,14 @@ try {
         if(count($id) == 1){
             $_SESSION['id'] = $id[0]['userid'];
         }
-        header("Location: index.php");
+        if (!isset($_SESSION['token'])) {
+            $_SESSION['token'] = bin2hex(random_bytes(32));
+        } else {
+            $token = $_SESSION['token'];
+        }
+        header("Location: index.php?".http_build_query(array(
+                "registered" => "true"
+            )));
         die();
     } else {
         header("Location: index.php?".http_build_query(array(

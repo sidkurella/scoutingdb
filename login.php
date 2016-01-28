@@ -24,7 +24,14 @@ try {
             $_SESSION['username'] = $login_username;
             $_SESSION['name'] = $results[0]['name'];
             $_SESSION['id'] = $results[0]['userid'];
-            header("Location: index.php");
+            if (!isset($_SESSION['token'])) {
+                $_SESSION['token'] = bin2hex(random_bytes(32));
+            } else {
+                $token = $_SESSION['token'];
+            }
+            header("Location: index.php?".http_build_query(array(
+                    "loggedin" => "true"
+                )));
             die();
         } else {
             header("Location: index.php?".http_build_query(array(

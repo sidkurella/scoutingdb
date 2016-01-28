@@ -10,6 +10,7 @@ $_SESSION['loggedin'] = false;
 $_SESSION['username'] = null;
 $_SESSION['name'] = null;
 $_SESSION['id'] = null;
+$_SESSION['token'] = null;
 session_unset();
 session_destroy();
 header("Location: index.php");

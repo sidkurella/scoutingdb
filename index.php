@@ -18,6 +18,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets/icons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/assets/icons/manifest.json">
+        <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="4Chainz Scouting">
+        <meta name="application-name" content="4Chainz Scouting">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 	</head>
 	<body class="landing" onload="checkerrors()">
 		<div id="page-wrapper">
@@ -33,8 +55,8 @@
                                 echo '<li>
                                     <a href="#">Scouting Forms</a>
                                     <ul>
-                                        <li><a href="preload.html">Preload Robot</a></li>
-                                        <li><a href="field.html">Field Robot</a></li>
+                                        <li><a href="preload.php">Preload Robot</a></li>
+                                        <li><a href="field.php">Field Robot</a></li>
                                         <!--
                                         <li>
                                             <a href="#">Submenu</a>
@@ -56,6 +78,7 @@
                                 echo '<li><a href="#" onclick="window.location.replace("logout.php")" class="button special">Log Out '.$_SESSION['name'].'</a></li>';
                             } else {
                                 echo '<li><a href="#" onclick="showlogin()" class="button special">Log In</a></li>';
+								echo '<li><a href="#" onclick="showsignup()" class="button special">Sign Up</a></li>';
                             }
                             ?>
 						</ul>
@@ -197,7 +220,7 @@
 						</header>
 						<form method="post" action="#" class="container 50%">
 							<div class="row uniform 50%">
-								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="emailaddress" placeholder="Your Email Address" /></div>
 								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
 							</div>
 						</form>
@@ -207,7 +230,7 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/SBHS-Robotics-Team-750C-4Chainz-498571030224657" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="mailto:team750c@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
@@ -226,74 +249,9 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-            <script src="assets/js/bootbox.min.js"></script>
             <script src="assets/js/bootstrap.min.js"></script>
-            <script>
-                function parse(val) {
-                    var result = "Not found",
-                        tmp = [];
-                    location.search
-                    //.replace ( "?", "" )
-                    // this is better, there might be a question mark inside
-                    .substr(1)
-                        .split("&")
-                        .forEach(function (item) {
-                        tmp = item.split("=");
-                        if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
-                    });
-                        return result;
-                }
-                function checkerrors() {
-                    var errortext = "";
-                    if (parse("alreadyexists") === "true") {
-                        console.log("alreadyexists");
-                        errortext = "A user with that username or email address already exists.";
-                    } else if (parse("incorrectlogin") === "true") {
-                        console.log("incorrectlogin");
-                        errortext = "Incorrect username or password. Please try logging in again.";
-                    } else if (parse("dberror") === "true") {
-                        console.log("dberror");
-                        errortext = "A database error occured. Please try again later.";
-                    }
-                    if (errortext !== ""){
-                        bootbox.dialog({
-                          title: '<div style="background-color: #272833">An error occurred</div>',
-                          message: '<div style="background-color: #272833">'+errortext+'</div>'
-                        });
-                    }
-                }
-                function showlogin(){
-                    bootbox.dialog({
-                            title: "Log in",
-                            message: '<div class="row">  ' +
-                            '<div class="col-md-12"> ' +
-                            '<form id="loginform" class="form-horizontal" method="post" action="login.php"> ' +
-                            '<div class="form-group"> ' +
-                            '<label class="col-md-4 control-label" for="name">Username</label> ' +
-                            '<div class="col-md-4"> ' +
-                            '<input id="username" name="name" type="text" placeholder="Username" class="form-control input-md"> ' +
-                            '</div> ' +
-                            '</div> ' +
-                            '<div class="form-group"> ' +
-                            '<label class="col-md-4 control-label" for="pwd">Password</label> ' +
-                            '<div class="col-md-4"> ' +
-                            '<input id="password" name="pwd" type="password" placeholder="Password" class="form-control input-md"> ' +
-                            '</div> ' +
-                            '</div> ' +
-                            '</form> </div>  </div>',
-                            buttons: {
-                                success: {
-                                    label: "Log in",
-                                    className: "btn-success",
-                                    callback: function () {
-                                        document.getElementById("loginform").submit();
-                                    }
-                                }
-                            }
-                        }
-                    );
-                }
-            </script>
+            <script src="assets/js/bootbox.min.js"></script>
+            <script src="assets/js/global_funcs.js"></script>
 
 	</body>
 </html>
