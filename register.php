@@ -6,7 +6,15 @@
  * Time: 2:26 AM
  */
 session_start();
+require_once 'vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+$failfile = "";
 include("dbconnect.php");
+if($detect->isMobile() && !$detect->isTablet()) {
+    $failfile = "signup_page.php";
+} else {
+    $failfile = "index.php";
+}
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
@@ -47,18 +55,18 @@ try {
         } else {
             $token = $_SESSION['token'];
         }
-        header("Location: index.php?".http_build_query(array(
+        header("Location: $failfile?".http_build_query(array(
                 "registered" => "true"
             )));
         die();
     } else {
-        header("Location: index.php?".http_build_query(array(
+        header("Location: $failfile?".http_build_query(array(
                 "alreadyexists" => "true"
             )));
         die();
     }
 } catch(PDOException $e) {
-    header("Location: index.php?".http_build_query(array(
+    header("Location: $failfile?".http_build_query(array(
             "dberror" => "true"
         )));
     die();

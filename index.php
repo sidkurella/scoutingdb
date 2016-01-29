@@ -1,5 +1,7 @@
 <?php
     session_start();
+    require_once 'vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+    $detect = new Mobile_Detect;
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -57,6 +59,7 @@
                                     <ul>
                                         <li><a href="preload.php">Preload Robot</a></li>
                                         <li><a href="field.php">Field Robot</a></li>
+                                        <li><a href="teams.php">Robot Scores</a></li>
                                         <!--
                                         <li>
                                             <a href="#">Submenu</a>
@@ -76,8 +79,13 @@
                             if($_SESSION['loggedin']){
                                 echo '<li><a href="logout.php" onclick="" class="button special">Log Out '.$_SESSION['name'].'</a></li>';
                             } else {
-                                echo '<li><a href="#" onclick="showlogin()" class="button special">Log In</a></li>';
-								echo '<li><a href="#" onclick="showsignup()" class="button special">Sign Up</a></li>';
+                                if($detect->isMobile() && !$detect->isTablet()) {
+                                    echo '<li><a href="login_page.php" class="button special">Log In</a></li>';
+                                    echo '<li><a href="signup_page.php" class="button special">Sign Up</a></li>';
+                                } else {
+                                    echo '<li><a href="#" onclick="showlogin()" class="button special">Log In</a></li>';
+                                    echo '<li><a href="#" onclick="showsignup()" class="button special">Sign Up</a></li>';
+                                }
                             }
                             ?>
 						</ul>

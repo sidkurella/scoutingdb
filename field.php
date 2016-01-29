@@ -17,7 +17,7 @@
 -->
 <html>
 	<head>
-		<title>Preload Robot Form - 4Chainz</title>
+		<title>Field Robot Form - 4Chainz</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -102,8 +102,8 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Preload Robot Scouting Form</h2>
-							<p>Input scouting data for robots that primarily shoot driver loads.</p>
+							<h2>Field Robot Scouting Form</h2>
+							<p>Input scouting data for robots that primarily shoot field balls.</p>
 						</header>
 
 						<!-- Content -->
@@ -270,7 +270,7 @@
                                             <textarea name="message" id="message" placeholder="Enter any additional notes (optional)" rows="6"></textarea>
                                         </div>
                                         <input type="hidden" id="csrftoken" name="token" value="<?php echo $_SESSION['token']; ?>"/>
-                                        <input type="hidden" id="robottype" name="robottype" value="preload" />
+                                        <input type="hidden" id="robottype" name="robottype" value="field" />
                                         <div class="12u$">
                                             <ul class="actions">
                                                 <li><input type="submit" value="Submit" class="special" /></li>

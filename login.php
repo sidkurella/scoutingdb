@@ -6,6 +6,14 @@
  * Time: 2:02 AM
  */
 session_start();
+require_once 'vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+$failfile = "";
+if($detect->isMobile() && !$detect->isTablet()) {
+    $failfile = "login_page.php";
+} else {
+    $failfile = "index.php";
+}
 include("dbconnect.php");
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -18,7 +26,7 @@ try {
     $get_hash->execute();
     $results = $get_hash->setFetchMode(PDO::FETCH_ASSOC);
     $results = $get_hash->fetchAll();
-    if(count($results) == 1) {
+    if(count($results) === 1) {
         if(password_verify($login_password, $results[0]['passwd'])) {
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $login_username;
@@ -29,24 +37,24 @@ try {
             } else {
                 $token = $_SESSION['token'];
             }
-            header("Location: index.php?".http_build_query(array(
+            header("Location: $failfile?".http_build_query(array(
                     "loggedin" => "true"
                 )));
             die();
         } else {
-            header("Location: index.php?".http_build_query(array(
+            header("Location: $failfile?".http_build_query(array(
                     "incorrectlogin" => "true"
                 )));
             die();
         }
     } else {
-        header("Location: index.php?".http_build_query(array(
+        header("Location: $failfile?".http_build_query(array(
                 "incorrectlogin" => "true"
             )));
         die();
     }
 } catch(PDOException $e) {
-    header("Location: index.php?".http_build_query(array(
+    header("Location: $failfile?".http_build_query(array(
             "dberror" => "true"
         )));
     die();

@@ -15,6 +15,12 @@ function parse(val) {
         });
     return result;
 }
+function isMobile(){
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        return true;
+    }
+    return false;
+}
 function checkerrors() {
     var errortext = "";
     var titletext = "";
@@ -39,15 +45,30 @@ function checkerrors() {
     } else if (parse("loggedout") === "true"){
         titletext = "Operation completed successfully."
         errortext = "You were successfully logged out.";
+    } else if (parse("security") === "true"){
+        titletext = "An error occurred."
+        errortext = "For security purposes, you will need to log out and log in again.";
+    } else if (parse("submit_success") === "true"){
+        titletext = "Operation completed successfully."
+        errortext = "Your scouting data was submitted.";
     }
     if (errortext !== ""){
         bootbox.dialog({
             title: '<div style="background-color: #272833">'+titletext+'</div>',
-            message: '<div style="background-color: #272833">'+errortext+'</div>'
+            message: '<div style="background-color: #272833">'+errortext+'</div>',
+            buttons: {
+                dismiss: {
+                    label: "Dismiss",
+                    className: "btn-primary",
+                }
+            }
         });
     }
 }
 function showlogin(){
+    if(isMobile()){
+        prompt("Username");
+    }
     bootbox.dialog({
             title: "Log in",
             message: '<div class="row">  ' +
