@@ -19,7 +19,8 @@ try{
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $select_group = $conn->prepare("SELECT scores.teamnum, scores.robottype, scores.totalscore, robots.teamname,
-            robots.schoolname, robots.notes FROM scores INNER JOIN robots ON scores.teamnum = robots.teamnum;");
+            robots.schoolname, robots.notes FROM scores INNER JOIN robots ON scores.teamnum = robots.teamnum
+            ORDER BY scores.totalscore DESC;");
     $select_group->execute();
     $select_group->setFetchMode(PDO::FETCH_ASSOC);
     $results = $select_group->fetchAll();
