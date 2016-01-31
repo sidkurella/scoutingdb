@@ -132,8 +132,10 @@
                                                     <option value="SFly">Single Flywheel</option>
                                                     <option value="DFly">Double Flywheel</option>
                                                     <option value="Naut">Nautilus Gear</option>
+                                                    <option value="Rack">Rack Gear</option>
                                                     <option value="Cata">Catapult</option>
                                                     <option value="SBar">Spinning Bar</option>
+                                                    <option value="Dual">Dual Shooter</option>
                                                     <option value="Othr">Other</option>
                                                 </select>
                                             </div>

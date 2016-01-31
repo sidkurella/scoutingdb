@@ -209,8 +209,8 @@ function calculate_scores(array $data):array {
 
         $scores['totalscore'] =
             ($scores['shooterscore'] * 2 + $scores['drivescore'] * 2 + $scores['intakescore'] * 1.5 +
-            $scores['liftscore'] * 0.25 + $scores['robotscore'] * 1 + $scores['autonscore'] * 0.75 +
-            $scores['driverscore'] * 1.25 + $scores['qualifiersscore'] * 1 + $scores['skillsscore'] * 1) * 100/1075 * 1.25;
+                $scores['liftscore'] * 0.25 + $scores['robotscore'] * 1 + $scores['autonscore'] * 0.75 +
+                $scores['driverscore'] * 1.25 + $scores['qualifiersscore'] * 1 + $scores['skillsscore'] * 1) * 125/1075;
     }
     return $scores;
 }
