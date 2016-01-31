@@ -120,7 +120,7 @@ function calculate_scores(array $data):array {
     ];
 
     if($data['robottype'] === "preload") {
-        if ($data['shooterballsshot'] === 0) {
+        if ($data['shooterballsshot'] === 0 || $data['shooterballsshot'] === "0") {
             $scores['shooterscore'] = 0;
         } else {
             $scores['shooterscore'] = $data['shooterdist'];
@@ -151,7 +151,7 @@ function calculate_scores(array $data):array {
         $scores['driverscore'] =
             ($data['driverskill'] * 2 + $data['driverstrategy'] + $data['driverruleknowledge']) * 100 / 40;
 
-        if ($data['qualifiersmatchesplayed'] === 0) {
+        if ($data['qualifiersmatchesplayed'] === 0 || $data['qualifiersmatchesplayed'] === "0") {
             $scores['qualifiersscore'] = 0;
         } else {
             $scores['qualifiersscore'] =
@@ -167,7 +167,7 @@ function calculate_scores(array $data):array {
             $scores['driverscore'] * 1 + $scores['qualifiersscore'] * 1 + $scores['skillsscore'] * 1) * 100/1075;
 
     } else if($data['robottype'] === "field") {
-        if ($data['shooterballsshot'] === 0) {
+        if ($data['shooterballsshot'] === 0 || $data['shooterballsshot'] === "0") {
             $scores['shooterscore'] = 0;
         } else {
             $scores['shooterscore'] = $data['shooterdist'] * 0.5;
@@ -198,7 +198,7 @@ function calculate_scores(array $data):array {
         $scores['driverscore'] =
             ($data['driverskill'] * 2 + $data['driverstrategy'] + $data['driverruleknowledge']) * 100 / 40;
 
-        if ($data['qualifiersmatchesplayed'] === 0) {
+        if ($data['qualifiersmatchesplayed'] === 0 || $data['qualifiersmatchesplayed'] === "0") {
             $scores['qualifiersscore'] = 0;
         } else {
             $scores['qualifiersscore'] =
