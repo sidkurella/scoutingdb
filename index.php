@@ -84,7 +84,7 @@
                                     echo '<li><a href="signup_page.php" class="button special">Sign Up</a></li>';
                                 } else {
                                     echo '<li><a href="#" onclick="showlogin()" class="button special">Log In</a></li>';
-                                    echo '<li><a href="#" onclick="showsignup()" class="button special">Sign Up</a></li>';
+                                    //echo '<li><a href="#" onclick="showsignup()" class="button special">Sign Up</a></li>';
                                 }
                             }
                             ?>
