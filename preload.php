@@ -290,6 +290,7 @@
             <footer id="footer">
                 <ul class="icons">
                     <li><a href="https://www.facebook.com/SBHS-Robotics-Team-750C-4Chainz-498571030224657" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.youtube.com/user/Team750C" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
                     <li><a href="mailto:team750c@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
                 </ul>
                 <ul class="copyright">

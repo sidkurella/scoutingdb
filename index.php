@@ -113,24 +113,24 @@
 							<div class="row">
 								<div class="4u 12u$(medium)">
 									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<h2>Monroe Tournament Champions</h2>
+										<p>Monroe Township, New Jersey</p>
 									</header>
 								</div>
-								<div class="4u 12u$(medium)">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+								<div class="8u$ 12u$(medium)">
+									<p>Our second tournament of the year, and our first victory.
+									After major improvements and design changes to our nautilus shooter,
+									we ended up with arguably the most accurate shooter in New Jersey.
+									Single-handedly scoring over a hundred points per match, we were a force to
+									be reckoned with.</p>
 								</div>
-								<div class="4u$ 12u$(medium)">
+								<!--<div class="4u$ 12u$(medium)">
 									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
 									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
 									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
 									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
 									ipsum dolor nullam.</p>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
@@ -139,61 +139,87 @@
 
 			<!-- Two -->
 				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/bcit%20tournament%20champions.JPG" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<h2>BCIT Tournament Champions</h2>
+							<p>Burlington County, New Jersey</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
+						<p>In this competition, we demonstrated our lift by low elevating our partner, 9490, causing us
+                        to win. So far, we are the only team in NJ to successfully elevate a partner robot.
+                        Our other teammate, 750E, played the field, complementing our driver load strategy.
+                        We scored a large number of balls into the high goal, demonstrating our unique
+                        nautilus gear shooter.</p>
+						<!--<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+						</ul>-->
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Three -->
 				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+					<span class="image fit main bottom"><img src="images/ranney%20excellence%20winner.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+							<h2>Ranney Excellence Award Winner</h2>
+							<p>Tinton Falls, New Jersey</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+						<p>After a dominant performance throughout the qualification matches, a new personal best
+                            driver skills score, and the best programming score in New Jersey, 750C proved itself
+                            to be one of the best teams in New Jersey. Going undefeated, even in a one-versus-two
+                            match against two of the best NJ teams, showed us and the other NJ teams that we had
+                            come a long way since our first competition.</p>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+            <section id="four" class="wrapper style1 special fade-up">
+                <div class="container">
+                    <header class="major">
+                        <h2>Videos</h2>
+                        <p>See our robot in action!</p>
+                    </header>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qSWZA9rCQxU" frameborder="0" allowfullscreen></iframe>
+                    <footer class="major">
+                        <!--<ul class="actions">
+                            <li><a href="#" class="button">Magna sed feugiat</a></li>
+                        </ul>-->
+                    </footer>
+                    <a href="#five" class="goto-next scrolly">Next</a>
+                </div>
+            </section>
+
+            <!-- Five -->
+				<section id="five" class="wrapper style2 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>Features</h2>
+							<p>See what our robot can do!</p>
 						</header>
 						<div class="box alt">
 							<div class="row uniform">
 								<section class="4u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-area-chart"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon alt major fa-gear"></span>
+									<h3>Unique Nautilus Gear Shooter</h3>
+									<p>Powered by three motors, our nautilus shooter pulls back rubber bands, providing near-perfect accuracy
+                                        while being quick to fire.</p>
 								</section>
 								<section class="4u 6u$(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon alt major fa-car"></span>
+									<h3>Powerful Chassis</h3>
+									<p>Our six-motor drive provides intense torque while maintaining its speed,
+                                        even under heavy loads. It allows us to get balls from the field with
+                                        ease, increasing our scoring potential.</p>
 								</section>
 								<section class="4u$ 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon alt major fa-arrow-up"></span>
+									<h3>Fast Lift</h3>
+									<p>Our lift uses a transmission system to get power from the same motors as the drive,
+                                        providing a large amount of lifting power while conserving resources.</p>
 								</section>
-								<section class="4u 6u$(medium) 12u$(xsmall)">
+								<!--<section class="4u 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-paper-plane"></span>
 									<h3>Non semper interdum</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
@@ -207,30 +233,14 @@
 									<span class="icon alt major fa-lock"></span>
 									<h3>Massa arcu accumsan</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
+								</section>-->
 							</div>
 						</div>
 						<footer class="major">
-							<ul class="actions">
+							<!--<ul class="actions">
 								<li><a href="#" class="button">Magna sed feugiat</a></li>
-							</ul>
+							</ul>-->
 						</footer>
-					</div>
-				</section>
-
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
-					<div class="container">
-						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
-						</header>
-						<form method="post" action="#" class="container 50%">
-							<div class="row uniform 50%">
-								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="emailaddress" placeholder="Your Email Address" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
-							</div>
-						</form>
 					</div>
 				</section>
 
@@ -238,6 +248,7 @@
 				<footer id="footer">
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/SBHS-Robotics-Team-750C-4Chainz-498571030224657" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.youtube.com/user/Team750C" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
 						<li><a href="mailto:team750c@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">

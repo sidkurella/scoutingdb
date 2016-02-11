@@ -15,6 +15,10 @@ if($detect->isMobile() && !$detect->isTablet()) {
 } else {
     $failfile = "index.php";
 }
+header("Location: $failfile?".http_build_query(array(
+        "disabled" => "true"
+    )));
+die();
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception

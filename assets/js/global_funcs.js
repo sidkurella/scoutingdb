@@ -51,6 +51,9 @@ function checkerrors() {
     } else if (parse("submit_success") === "true"){
         titletext = "Operation completed successfully."
         errortext = "Your scouting data was submitted.";
+    } else if (parse("disabled") === "true"){
+        titletext = "An error occurred."
+        errortext = "This action has been disabled. Please contact the website administrator if you believe this to be an error.";
     }
     if (errortext !== ""){
         bootbox.dialog({
