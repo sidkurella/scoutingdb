@@ -102,8 +102,40 @@
 						</header>
 						<span class="image"><img src="images/4chainz%20square%20logo.jpg" alt="" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<a href="#champs" class="goto-next scrolly">Next</a>
 				</section>
+
+			<section id="champs" class="spotlight style1 bottom">
+				<span class="image fit main"><img src="images/nj%20state%20champions%20banners.jpg" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u$(medium)">
+								<header>
+									<h2>New Jersey State Championship</h2>
+									<p>Cherry Hill, New Jersey</p>
+								</header>
+							</div>
+							<div class="8u$ 12u$(medium)">
+								<p>After a hard-fought finals match against 9708, 765A, and 4610D, we emerged
+									victorious, along with our teammates, 4610Z and 750W. We also won the Programming
+								Skills Champions award for the state of New Jersey, a testament to the efforts
+								of our programmers, without whom the robot would not function. A huge shoutout to
+								765A, who won the Excellence Award, and 2616F, who won the design award. Hope to
+								see you at the World Championship!</p>
+							</div>
+							<!--<div class="4u$ 12u$(medium)">
+                                <p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
+                                adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+                                Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+                                mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+                                ipsum dolor nullam.</p>
+                            </div>-->
+						</div>
+					</div>
+				</div>
+				<a href="#one" class="goto-next scrolly">Next</a>
+			</section>
 
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
