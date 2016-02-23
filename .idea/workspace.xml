@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb91a1f2-21dd-4795-9d70-f3ccfa4e1660" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/nj state champions banners.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="scoutingdb.iws" />
@@ -102,12 +101,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2020548">
-              <caret line="108" column="97" selection-start-line="108" selection-start-column="97" selection-end-line="108" selection-end-column="97" />
+            <state vertical-scroll-proportion="0.6130137">
+              <caret line="123" column="104" selection-start-line="123" selection-start-column="104" selection-end-line="123" selection-end-column="104" />
               <folding>
-                <marker date="1456196211480" expanded="true" signature="3279:4402" placeholder="..." />
-                <marker date="1456196211480" expanded="true" signature="3387:4364" placeholder="..." />
-                <marker date="1456196211480" expanded="true" signature="3694:4324" placeholder="..." />
+                <marker date="1456198033742" expanded="true" signature="3279:4402" placeholder="..." />
+                <marker date="1456198033742" expanded="true" signature="3387:4364" placeholder="..." />
+                <marker date="1456198033742" expanded="true" signature="3694:4324" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -266,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -369,7 +369,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -569,13 +568,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-theme.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-theme.css">
@@ -604,9 +603,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
           <folding>
-            <marker date="1456196211480" expanded="true" signature="3279:4402" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3387:4364" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3694:4324" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3279:4402" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3387:4364" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3694:4324" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -705,9 +704,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1456196211480" expanded="true" signature="3279:4402" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3387:4364" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3694:4324" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3279:4402" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3387:4364" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3694:4324" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -759,9 +758,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1456196211480" expanded="true" signature="3279:4402" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3387:4364" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3694:4324" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3279:4402" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3387:4364" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3694:4324" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -866,13 +865,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-theme.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-theme.css">
@@ -1009,12 +1008,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2020548">
-          <caret line="108" column="97" selection-start-line="108" selection-start-column="97" selection-end-line="108" selection-end-column="97" />
+        <state vertical-scroll-proportion="0.6130137">
+          <caret line="123" column="104" selection-start-line="123" selection-start-column="104" selection-end-line="123" selection-end-column="104" />
           <folding>
-            <marker date="1456196211480" expanded="true" signature="3279:4402" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3387:4364" placeholder="..." />
-            <marker date="1456196211480" expanded="true" signature="3694:4324" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3279:4402" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3387:4364" placeholder="..." />
+            <marker date="1456198033742" expanded="true" signature="3694:4324" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -121,7 +121,7 @@
 									victorious, along with our teammates, 4610Z and 750W. We also won the Programming
 								Skills Champions award for the state of New Jersey, a testament to the efforts
 								of our programmers, without whom the robot would not function. A huge shoutout to
-								765A, who won the Excellence Award, and 2616F, who won the design award. Hope to
+								765A, who won the Excellence Award, and 2616F, who won the Design Award. Hope to
 								see you at the World Championship!</p>
 							</div>
 							<!--<div class="4u$ 12u$(medium)">
